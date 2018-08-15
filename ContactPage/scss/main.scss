@@ -159,6 +159,11 @@ h1.end {
   margin: 0;
   font-size: 20px;
 }
+#map {
+  height: 500px;
+
+  width: 100%;
+}
 
 @media (max-width: 600px) {
   #form-box {
