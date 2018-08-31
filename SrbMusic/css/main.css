@@ -1829,8 +1829,9 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
  * ------------------------------------------------------------------- */
 #about {
   position: relative;
+
   padding: 4.2rem 0 12rem;
-  background-color: #ffffff;
+  background-color: #19191b;
   min-height: 696px;
   text-align: center;
 }
@@ -1844,7 +1845,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   font-family: "montserrat-bold", sans-serif;
   font-size: 1.8rem;
   line-height: 1.667;
-  color: #07617d;
+  color: #ffff;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   position: relative;
@@ -1861,7 +1862,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   font-family: "librebaskerville-bold", serif;
   font-size: 4rem;
   line-height: 1.8;
-  color: #2e383f;
+  color: #ffff;
   margin-top: 6rem;
 }
 
@@ -1935,6 +1936,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
  *  12. services - (_layout.scss)
  *
  * ------------------------------------------------------------------- */
+
 #services {
   background-color: #19191b;
   background-image: url(../images/services-bg.jpg);
@@ -1948,6 +1950,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   padding: 15rem 0 15rem;
   color: rgba(255, 255, 255, 0.3);
 }
+
 #services .overlay {
   position: absolute;
   top: 0;
@@ -1980,43 +1983,20 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#00000000',GradientType=0 );
 }
-#services .section-intro h3 {
-  color: rgba(242, 242, 242, 0.5);
+#services h1::before {
+  display: block;
+  content: "";
+  width: 3px;
+  height: 9.6rem;
+  background-color: rgba(149, 149, 149, 0.7);
+  margin: 0 auto 2.4rem;
 }
 #services .section-intro h1 {
-  color: #ffffff;
+  color: #ffff;
 }
-#services .section-intro .lead {
-  color: rgba(242, 242, 242, 0.4);
-}
-#services .services-content {
-  text-align: center;
-  max-width: 1040px;
-}
-#services .services-list {
-  margin-top: 1.2rem;
-  text-align: center;
-}
-#services .services-list .service-item {
-  margin-bottom: 3rem;
-  padding: 0 50px;
-}
-#services .services-list .service-item p {
-  color: rgba(242, 242, 242, 0.5);
-}
-#services .services-list .icon {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-}
-#services .services-list .icon i {
-  font-size: 5.4rem;
-  color: #f9a828;
-}
-#services .services-list .h05 {
-  font-size: 1.7rem;
-  line-height: 1.765;
-  color: #ffffff;
-  margin-bottom: 3rem;
+#services .section-intro h3 {
+  /* color: rgba(242, 242, 242, 0.5); */
+  color: #ffff;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2050,9 +2030,6 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 @media only screen and (max-width: 600px) {
   #services .services-list .service-item {
     padding: 0 10px;
-  }
-  #services .services-list .icon i {
-    font-size: 5rem;
   }
 }
 @media only screen and (max-width: 400px) {
