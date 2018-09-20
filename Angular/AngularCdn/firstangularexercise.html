@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Angular</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.1/angular.min.js"></script>
+
+</head>
+
+<body>
+
+    <body ng-app="my-app">
+        <div ng-controller="HelloController">
+            <h2>Welcome {{helloTo.title}} to the world of Web development</h2>
+            <h3>Students include {{helloTo.name1}} and {{helloTo.name2}}</h3>
+
+        </div>
+        <script>
+            angular.module("myapp", []).controller("HelloController", function ($scope) {
+                $scope.helloTo = {};
+                $scope.helloTo.title = "Students";
+                $scope.helloTo.name2 = "Anila";
+
+            });
+        </script>
+    </body>
+
+</body>
+
+</html>
