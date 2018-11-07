@@ -44,6 +44,14 @@
       "protractor": "~5.3.0",
       "ts-node": "~5.0.1",
       "tslint": "~5.9.1"
-    }
+    },
+    "configurations": {
+      "production": {
+        "fileReplacements": [
+          {
+            "replace": "src/environments/environment.ts",
+            "with": "src/environments/environment.prod.ts"
+          }
+        
   }
   
